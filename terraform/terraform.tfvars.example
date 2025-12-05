@@ -1,0 +1,12 @@
+# Terraform variable values
+# Copy this file to terraform.tfvars and update with your values
+
+resource_group_name = "rg-firewall-test-poc"
+location = "eastus"  # Change to your preferred Azure region
+
+# VM credentials (use a strong password!)
+test_vm_admin_username = "azureadmin"
+test_vm_admin_password = "CHANGE-ME-StrongP@ssw0rd123!"
+
+# Your Synapse workspace name (or any test endpoint)
+synapse_workspace_name = "testsynapseworkspace001"
