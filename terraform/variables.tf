@@ -23,7 +23,13 @@ variable "test_vm_admin_password" {
 }
 
 variable "synapse_workspace_name" {
-  description = "Name of the Synapse workspace to test blocking against"
+  description = "Name of the Synapse workspace (must be globally unique, 3-50 chars, alphanumeric)"
   type        = string
-  default     = "testsynapseworkspace001"
+  default     = "syn-fw-test-001"
+}
+
+variable "synapse_sql_admin_password" {
+  description = "SQL admin password for Synapse workspace (use strong password)"
+  type        = string
+  sensitive   = true
 }

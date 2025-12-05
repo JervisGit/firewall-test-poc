@@ -8,5 +8,6 @@ location = "eastus"  # Change to your preferred Azure region
 test_vm_admin_username = "azureadmin"
 test_vm_admin_password = "CHANGE-ME-StrongP@ssw0rd123!"
 
-# Your Synapse workspace name (or any test endpoint)
-synapse_workspace_name = "testsynapseworkspace001"
+# Synapse workspace configuration (workspace name must be globally unique)
+synapse_workspace_name = "syn-fw-test-001"  # Change this to a unique name
+synapse_sql_admin_password = "CHANGE-ME-SynapseP@ssw0rd123!"
